@@ -10,6 +10,10 @@
   font-family: heviatas;
   src: url(Heavitas.ttf);
 }
+@font-face {
+  font-family: noodle;
+  src: url(Super_Noodles.otf);
+}
 
 * {
   margin: 0;
@@ -28,8 +32,7 @@ body {
 }
 
 .header {
-  background-image: url(yellow.png);
-  background-color: #FFDE59;
+  background-color: #F5D142;
   background-size:contain;
   height: 120px;
   display: flex;
@@ -57,10 +60,10 @@ body {
 }
 
 .gambar h5 {
-  font-family: myFont;
-  font-size: 25px;
-  color: #ca3433;
-  text-shadow: 0 10px 20px black;
+  font-family: noodle;
+  font-size: 30px;
+  color: #B22222;
+
 }
 
 .section {
@@ -72,13 +75,14 @@ body {
   display: flex;
   gap: 20px; /* Menambahkan jarak antar item menu */
   margin-bottom: 30px;
+
 }
 .section ul.active {
   height: auto; /* Change to 'auto' to fit the content */
 }
 .section li a {
-  font-family: heviatas;
-  font-size: 20px;
+  font-family: noodle;
+  font-size: 25px;
   display: block;
   color: black;
   text-align: center;
@@ -223,7 +227,7 @@ body {
       font-size: 15px;
   }
   .section ul li{
-      padding: 13px;
+      padding: 20px;
 
   }
   .section li a::after {
@@ -293,7 +297,7 @@ body {
   align-items: center; /* Menempatkan konten di tengah secara vertikal */
   height: 50vh; /* Membuat div `isi` setinggi setengah viewport */
   position: relative; /* Menjadikan `.isi` sebagai konteks posisi untuk anak-anaknya */
-
+  background-image: url(design.png);
 }
 
 .gambar1 {
@@ -352,7 +356,7 @@ body {
 }
 
 .menu-item h1 {
-  font-size: 1em;
+  font-size: 1.4em;
   margin-top: 10px;
 }
 
@@ -363,8 +367,9 @@ body {
 }
 
 .menu-favorit {
-  font-family: heviatas;
+  font-family: noodle;
   background-color: #FFF9C4;
+  background-image: url(design.png);
 }
 
 .btn {
@@ -379,10 +384,10 @@ body {
   position: relative;
   border-radius: 10px;
   font-family: heviatas;
-  overflow: hidden; /* Ensures the ::after pseudo-element doesn't overflow */
+  overflow: hidden;
 }
 
-.button::after {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -390,17 +395,25 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 300ms ease-in-out; /* Smooth transition */
+  transition: transform 300ms ease-in-out;
+  z-index: 1; /* Pastikan overlay berada di bawah teks */
 }
 
-.button-one:hover::after {
+.button:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+.button span {
+  position: relative;
+  z-index: 2; /* Pastikan teks berada di atas overlay */
+}
+
+
+
 .section2.parallax {
   position: relative;
   background-image: url(section.jpg);
@@ -409,7 +422,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 10vh;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -446,4 +458,57 @@ body {
 
 .isian {
  height: 100vh;
+}
+
+.testimonials{
+  padding: 40px 0;
+  background: #FFF9C4;
+  color: #434343;
+  text-align: center;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: gold;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
 }
