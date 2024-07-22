@@ -465,6 +465,7 @@ body {
   background: #FFF9C4;
   color: #434343;
   text-align: center;
+  background-image: url(design.png);
 }
 .row{
   display: flex;
