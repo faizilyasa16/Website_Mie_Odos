@@ -1,0 +1,449 @@
+@font-face {
+  font-family: myFont;
+  src: url(Geskal.ttf);
+}
+@font-face {
+  font-family: takCubit;
+  src: url(Tak-Cubit.ttf);
+}
+@font-face {
+  font-family: heviatas;
+  src: url(Heavitas.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #FFF9C4;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  background-image: url(yellow.png);
+  background-color: #FFDE59;
+  background-size:contain;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1000; /* Atur z-index header lebih tinggi */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Sticks to the top of the viewport */
+}
+
+
+.gambar {
+  margin: 10px 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+.vertikal-line {
+  width: 1px;
+  height: 55px;
+  background-color: black;
+}
+
+.gambar h5 {
+  font-family: myFont;
+  font-size: 25px;
+  color: #ca3433;
+  text-shadow: 0 10px 20px black;
+}
+
+.section {
+  margin: 0px 80px;
+}
+
+.section ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; /* Menambahkan jarak antar item menu */
+  margin-bottom: 30px;
+}
+.section ul.active {
+  height: auto; /* Change to 'auto' to fit the content */
+}
+.section li a {
+  font-family: heviatas;
+  font-size: 20px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 7px 16px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden; /* Untuk mengatur overflow pseudo-element */
+}
+
+.section li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ca3433;
+  bottom: 0;
+  left: -100%;
+  transition: left 0.3s ease-in-out;
+}
+
+.section li a:hover {
+  color: #ca3433;
+}
+
+.section li a:hover::after {
+  left: 0;
+}
+
+.slides {
+  width: 100%;
+  position: relative;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.slides .slide{
+  display: none;
+}
+
+.slides .slide img{
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  margin: 0;
+  padding: 0;
+  display: grid;  
+}
+
+.slides .navigation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.slides .navigation .prev, .slides .navigation .next{
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(0,0,0,0.2);
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.slides .navigation .prev:hover, .slides .navigation .next:hover{
+  background: rgba(0,0,0,1);
+}
+
+@keyframes fade {
+  from{opacity: 0.3}
+  to {opacity: 1}
+}
+
+@media (max-width: 992px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 18px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 768px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 360px){
+  .slides .navigation .prev, .slides .navigation .next{
+    font-size: 11px;
+    padding: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .gambar {
+      margin: 10px 20px;
+  }
+
+  .gambar img {
+      width: 50px; /* Adjust width for mobile view */
+  }
+
+  .gambar h5 {
+      font-size: 10px; /* Adjust font size for mobile view */
+  }
+}
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i{
+  color: black;
+  font-size: 28px;
+}
+
+@media (max-width:1062px) {
+  .section ul{
+      position: absolute;
+      top: 120px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: yellow;
+      gap: 0;
+      height: 500px;
+      overflow: hidden;
+      font-size: 5px;
+  }
+  .section ul li a {
+      font-size: 15px;
+  }
+  .section ul li{
+      padding: 13px;
+
+  }
+  .section li a::after {
+    display: none;
+  }
+  .section ul.active{
+      height: auto;
+  }
+  .menu-icon{
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 40px;
+  }
+  #menuList{
+      transition: all 0.5s;
+  }
+}
+
+
+/* Parallax effect for About Us section */
+.section1.parallax {
+  position: relative;
+  background-image: url(section.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+}
+
+.section1.parallax .text-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.section1.parallax .text {
+  font-family: heviatas;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+               5px 5px 70px rgba(255, 255, 255, 0.5);
+  position: relative;
+  transition: z-index 0.5s;
+  top: 50px;
+}
+
+.section1.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.isi {
+  display: flex;
+  justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+  align-items: center; /* Menempatkan konten di tengah secara vertikal */
+  height: 50vh; /* Membuat div `isi` setinggi setengah viewport */
+  position: relative; /* Menjadikan `.isi` sebagai konteks posisi untuk anak-anaknya */
+
+}
+
+.gambar1 {
+  display: flex;
+  flex-direction: row; /* Menempatkan elemen dalam arah baris */
+  align-items: center; /* Menempatkan konten di tengah secara vertikal dalam baris */
+  position: relative; /* Menjadikan `.gambar1` elemen dengan posisi relatif */
+  padding-right: 20px; /* Menambahkan jarak antara gambar dan teks */
+  left: 5%;
+}
+
+.gambar1 img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 0; /* Menghapus margin */
+  padding: 0; /* Menghapus padding */
+}
+
+.vertikal-line1 {
+  width: 2px; /* Lebar garis vertikal */
+  height: 200px; /* Tinggi garis vertikal tetap */
+  background-color: black; 
+  margin: 0 50px; /* Jarak antara gambar dan garis, dan garis dan teks */
+  padding: 0;
+}
+
+.teks1 {
+  margin: 0;
+  padding: 0;
+  font-family: heviatas;
+  font-size: 16px; /* Ukuran font untuk teks */
+  color: #000; /* Warna teks */
+  max-width: 500px; /* Lebar maksimal untuk teks, bisa disesuaikan */
+  word-wrap: break-word; /* Memastikan teks panjang turun ke bawah */
+}
+
+.menu-favorit {
+  text-align: center;
+  padding: 50px 0; /* Padding atas dan bawah untuk memberikan ruang */
+  background-color: #f9f9f9; /* Warna latar belakang untuk kontras */
+}
+
+
+.menu-item {
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item h1 {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.menu-item p {
+  font-size: 1em;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-favorit {
+  font-family: heviatas;
+  background-color: #FFF9C4;
+}
+
+.btn {
+  margin-top: 10px;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  background: #ee6352;
+  color: white;
+  padding: 1em 2em;
+  position: relative;
+  border-radius: 10px;
+  font-family: heviatas;
+  overflow: hidden; /* Ensures the ::after pseudo-element doesn't overflow */
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out; /* Smooth transition */
+}
+
+.button-one:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.section2.parallax {
+  position: relative;
+  background-image: url(section.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+}
+
+.section2.parallax .text-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.section2.parallax .text {
+  font-family: heviatas;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+               5px 5px 70px rgba(255, 255, 255, 0.5);
+  position: relative;
+  transition: z-index 0.5s;
+  top: 50px;
+}
+
+.section2.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.isian {
+ height: 100vh;
+}

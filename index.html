@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mie Odos</title>
+    <link rel="icon" href="images.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <div class="header">
+        <div class="gambar">
+            <img src="images.png" alt="" width="100px">
+            <div class="vertikal-line"></div>
+            <h5>Mie Odos</h5>
+        </div>
+        <div class="section">
+            <ul id="menuList">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Lokasi</a></li>
+                <li><a href="#">Kontak</a></li>
+
+            </ul>
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <div class="slides">
+      <div class="slide">
+        <img src="hero.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="hero.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="hero.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="hero.jpg" alt="">
+      </div>
+      <div class="navigation">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="section1 parallax">
+      <div class="text-wrapper">
+        <div class="text">About us</div>
+      </div>
+    </div>
+    <div class="isi">
+      <div class="gambar1">
+        <img src="odos.png" alt="" data-aos="fade-up" data-aos-duration="3000">
+        <div class="vertikal-line1"data-aos="fade-down" data-aos-duration="1000"></div>
+        <div class="teks1" data-aos="fade-left" data-aos-duration="2000">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni dolores sint, illo placeat aspernatur omnis nemo vel sequi voluptas, exercitationem quidem mollitia. Mollitia, similique corrupti porro consectetur excepturi ipsam in?</p>
+        </div>
+      </div>
+    </div>
+    <div class="section1 parallax">
+      <div class="text-wrapper">
+        <div class="text" data-aos="fade-left" data-aos-duration="600" >Menu Terbaik</div>
+      </div>
+    </div>
+    <div class="menu-favorit">
+      <div class="menu-item" data-aos="zoom-in"  >
+        <img src="img/odos1.jpeg" alt="Menu 1">
+        <h1>Mie Odos Chicken Strip Bolognese Sauce</h1>
+        <p>Mie Odos Chicken Strip Bolognese Sauce adalah hidangan mie kenyal dengan potongan ayam renyah dan saus bolognese yang kaya rasa. Saus bolognese terbuat dari tomat segar dan rempah khas Italia, memberikan cita rasa yang lezat dan menggugah selera.</p>
+      </div>
+      <div class="menu-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/odos2.jpeg" alt="Menu 2">
+        <h1>Mie Odos Chicken Katsu</h1>
+        <p>Mie Odos Chicken Katsu adalah mie kenyal yang disajikan dengan potongan ayam katsu renyah. Ayam katsu digoreng hingga keemasan, memberikan tekstur renyah di luar dan lembut di dalam, menciptakan hidangan yang lezat dan memuaskan.</p>
+      </div>
+      <div class="menu-item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="img/odos3.jpeg" alt="Menu 3">
+        <h1>Mie Odos Sosis Cheese Roll</h1>
+        <p>Mie Odos Sosis Cheese Roll adalah mie kenyal dengan sosis gulung keju yang lezat. Perpaduan rasa gurih dari sosis dan creamy dari keju menjadikan hidangan ini nikmat dan memuaskan.</p>
+      </div>
+      <div class="btn">
+        <button class="button button-one" data-aos="fade-up" data-aos-duration="1000">Menu Lainnya</button>
+      </div>
+    </div>
+    <div class="section2 parallax">
+      <div class="text-wrapper">
+        <div class="text" data-aos="fade-right" data-aos-duration="1000" >Ulasan Pelanggan</div>
+      </div>
+    </div>
+    <div class="isian">
+      <h1>Hello World</h1>
+    </div>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="slide.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
