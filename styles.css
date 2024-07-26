@@ -34,7 +34,7 @@ body {
 .header {
   background-color: #F5D142;
   background-size:contain;
-  height: 120px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@ body {
 
 .gambar h5 {
   font-family: noodle;
-  font-size: 30px;
+  font-size: 20px;
   color: #B22222;
 
 }
@@ -82,7 +82,7 @@ body {
 }
 .section li a {
   font-family: noodle;
-  font-size: 25px;
+  font-size: 15px;
   display: block;
   color: black;
   text-align: center;
@@ -145,15 +145,14 @@ body {
   cursor: pointer;
   padding: 16px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   color: white;
-  background: rgba(0,0,0,0.2);
   user-select: none;
   transition: 0.6s ease;
 }
 
 .slides .navigation .prev:hover, .slides .navigation .next:hover{
-  background: rgba(0,0,0,1);
+  color: #F5D142;
 }
 
 @keyframes fade {
@@ -213,7 +212,7 @@ body {
 @media (max-width:1062px) {
   .section ul{
       position: absolute;
-      top: 120px;
+      top: 80px;
       left: 0;
       right: 0;
       flex-direction: column;
@@ -228,7 +227,6 @@ body {
   }
   .section ul li{
       padding: 20px;
-
   }
   .section li a::after {
     display: none;
@@ -239,7 +237,7 @@ body {
   .menu-icon{
       display: block;
       position: absolute;
-      top: 50px;
+      top: 20px;
       right: 40px;
   }
   #menuList{
@@ -541,8 +539,20 @@ footer{
 }
 /* Hover affect on social media icon */
 .socialIcons a:hover{
-  background-color: #ca3433;
   transition: 0.5s;
+}
+.socialIcons a:hover .fa-facebook {
+  color: #3b5998; /* Warna Facebook saat di-hover */
+}
+
+.socialIcons a:hover .fa-instagram {
+  background: linear-gradient(45deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.socialIcons a:hover .fa-twitter {
+  color: #1da1f2; /* Warna Twitter saat di-hover */
 }
 .socialIcons a:hover i{
   color: white;
