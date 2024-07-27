@@ -193,6 +193,15 @@ body {
     font-size: 18px;
     padding: 13px;
   }
+  .slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 0;
+    padding: 0;
+    display: grid;  
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 768px){
@@ -205,6 +214,15 @@ body {
   .slides .navigation .prev, .slides .navigation .next{
     font-size: 15px;
     padding: 10px;
+  }
+  .slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 0;
+    padding: 0;
+    display: grid;  
+
   }
 }
 
@@ -219,6 +237,15 @@ body {
     font-size: 12px;
     padding: 7px;
   }
+  .slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 0;
+    padding: 0;
+    display: grid;  
+
+  }
 }
 
 @media (max-width: 360px){
@@ -231,6 +258,15 @@ body {
   .slides .navigation .prev, .slides .navigation .next{
     font-size: 11px;
     padding: 6px;
+  }
+  .slides .slide img{
+    width: 100%;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 0;
+    padding: 0;
+    display: grid;  
+
   }
 }
 @media (max-width: 768px) {
@@ -339,47 +375,97 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  position: relative;
-  background-color: #FFF9C4;
-  background-image: url(design.png);
-  background-clip: content-box; /* Pastikan background tidak mengganggu konten */
+  padding: 20px;
+  margin: 100px;
 }
 
 .gambar1 {
   display: flex;
-  flex-direction: row; /* Menempatkan elemen dalam arah baris */
-  align-items: center; /* Menempatkan konten di tengah secara vertikal dalam baris */
-  position: relative; /* Menjadikan `.gambar1` elemen dengan posisi relatif */
-  padding-right: 20px; /* Menambahkan jarak antara gambar dan teks */
-  left: 5%;
+  align-items: center;
+  text-align: left;
 }
 
 .gambar1 img {
-  display: block;
-  width: 300px;
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
   height: auto;
-  margin: 0; /* Menghapus margin */
-  padding: 0; /* Menghapus padding */
+  border-radius: 20px;
 }
 
 .vertikal-line1 {
-  width: 2px; /* Lebar garis vertikal */
-  height: 200px; /* Tinggi garis vertikal tetap */
-  background-color: black; 
-  margin: 0 50px; /* Jarak antara gambar dan garis, dan garis dan teks */
-  padding: 0;
+  width: 2px;
+  height: 100px;
+  background-color: black;
+  margin: 0 20px;
 }
 
 .teks1 {
-  margin: 0;
-  padding: 0;
-  font-family: heviatas;
-  font-size: 16px; /* Ukuran font untuk teks */
-  color: #000; /* Warna teks */
-  max-width: 500px; /* Lebar maksimal untuk teks, bisa disesuaikan */
-  word-wrap: break-word; /* Memastikan teks panjang turun ke bawah */
+  max-width: 500px;
+  margin: 20px;
+  font-family: noodle;
+  font-size: 13px;
 }
+
+@media (max-width: 992px) {
+  .gambar1 {
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .vertikal-line1 {
+    height: 50px;
+  }
+  
+  .teks1 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .isi {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .gambar1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gambar1 img {
+    max-width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  .vertikal-line1 {
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+  }
+  
+  .teks1 {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .gambar1 img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .vertikal-line1 {
+    width: 100%;
+    height: 1px;
+  }
+  
+  .teks1 {
+    margin: 5px 0;
+  }
+}
+
+
 
 .menu-favorit {
   text-align: center;
