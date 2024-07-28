@@ -26,12 +26,9 @@ body {
   background-color: #FFF9C4;
   background-image: url('design.png');
   background-size: auto;
+  padding-top: 80px;
 }
 
-.container {
-  width: 100%;
-  position: relative;
-}
 
 .header {
   background-color: #F5D142;
@@ -43,7 +40,7 @@ body {
   width: 100%;
   z-index: 1000; /* Atur z-index header lebih tinggi */
   position: -webkit-sticky; /* For Safari */
-  position: sticky;
+  position: fixed;
   top: 0; /* Sticks to the top of the viewport */
 }
 
