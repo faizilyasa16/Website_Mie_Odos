@@ -109,6 +109,83 @@ body {
 .section li a:hover::after {
   left: 0;
 }
+@media (max-width: 768px) {
+  .gambar {
+      margin: 10px 20px;
+  }
+
+  .gambar img {
+      width: 50px; /* Adjust width for mobile view */
+  }
+
+  .gambar h5 {
+      font-size: 10px; /* Adjust font size for mobile view */
+  }
+}
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i{
+  color: black;
+  font-size: 28px;
+}
+
+@media (max-width:1062px) {
+  body {
+    overflow-x: hidden;
+    background-color: #FFF9C4;
+    background-image: url('design.png');
+    background-size: auto;
+    padding-top: 0;
+  }
+  .header {
+    background-color: #F5D142;
+    background-size:contain;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1000; /* Atur z-index header lebih tinggi */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+  }
+  .section ul{
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: #F5D142;
+      gap: 0;
+      height: 500px;
+      overflow: hidden;
+      font-size: 5px;
+  }
+  .section ul li a {
+      font-size: 15px;
+  }
+  .section ul li{
+      padding: 20px;
+  }
+  .section li a::after {
+    display: none;
+  }
+  .section ul.active{
+      height: auto;
+  }
+  .menu-icon{
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 40px;
+  }
+  #menuList{
+      transition: all 0.5s;
+  }
+}
 .slides {
   width: 90%;
   position: relative;
@@ -266,63 +343,7 @@ body {
 
   }
 }
-@media (max-width: 768px) {
-  .gambar {
-      margin: 10px 20px;
-  }
 
-  .gambar img {
-      width: 50px; /* Adjust width for mobile view */
-  }
-
-  .gambar h5 {
-      font-size: 10px; /* Adjust font size for mobile view */
-  }
-}
-.menu-icon{
-  display: none;
-}
-
-.menu-icon i{
-  color: black;
-  font-size: 28px;
-}
-
-@media (max-width:1062px) {
-  .section ul{
-      position: absolute;
-      top: 80px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-      background: #F5D142;
-      gap: 0;
-      height: 500px;
-      overflow: hidden;
-      font-size: 5px;
-  }
-  .section ul li a {
-      font-size: 15px;
-  }
-  .section ul li{
-      padding: 20px;
-  }
-  .section li a::after {
-    display: none;
-  }
-  .section ul.active{
-      height: auto;
-  }
-  .menu-icon{
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 40px;
-  }
-  #menuList{
-      transition: all 0.5s;
-  }
-}
 
 
 /* Parallax effect for About Us section */
