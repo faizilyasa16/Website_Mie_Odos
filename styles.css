@@ -388,6 +388,18 @@ body {
   bottom: 0;
   z-index: 0;
 }
+@media (max-width: 768px) {
+
+  .section1.parallax .text {
+    font-family: heviatas;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+                 5px 5px 70px rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition: z-index 0.5s;
+    top: 50px;
+  }
+}
 
 .isi {
   display: flex;
@@ -444,29 +456,34 @@ body {
     flex-direction: column;
     padding: 10px;
   }
-  
+
   .gambar1 {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
-  
+
   .gambar1 img {
     max-width: 80%;
     margin-bottom: 10px;
   }
-  
+
   .vertikal-line1 {
     width: 100%;
     height: 2px;
     margin: 10px 0;
   }
-  
+
   .teks1 {
     max-width: 100%;
-    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .teks1 p {
+    font-size: 0.9em;
   }
 }
-
 @media (max-width: 576px) {
   .gambar1 img {
     max-width: 100%;
@@ -478,9 +495,12 @@ body {
     height: 1px;
   }
   
-  .teks1 {
-    margin: 5px 0;
-  }
+    .teks1 {
+      width: 300px;
+      margin: 20px;
+      font-family: noodle;
+      font-size: 13px;
+    }
 }
 
 
@@ -561,7 +581,42 @@ body {
   position: relative;
   z-index: 2; /* Pastikan teks berada di atas overlay */
 }
+@media (max-width: 1022px) {
+  .menu-item {
+    display: inline-block;
+    width: 45%;
+    margin: 10px auto;
+    text-align: center;
+  }
 
+  .menu-item h1 {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .menu-item p {
+    font-size: 0.8em;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+}
+@media (max-width: 768px) {
+  .menu-item {
+    display: block;
+    width: 90%;
+    margin: 20px 0px 0px 0px auto;
+  }
+
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+
+}
 
 
 .section2.parallax {
@@ -605,7 +660,18 @@ body {
   bottom: 0;
   z-index: 0;
 }
-
+@media (max-width: 768px) {
+  .section2.parallax .text {
+    font-family: heviatas;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+                 5px 5px 70px rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition: z-index 0.5s;
+    top: 50px;
+  }
+  
+}
 .isian {
  height: 100vh;
 }
