@@ -497,6 +497,7 @@ body {
   
     .teks1 {
       width: 300px;
+      max-width: 500px;
       margin: 20px;
       font-family: noodle;
       font-size: 13px;
