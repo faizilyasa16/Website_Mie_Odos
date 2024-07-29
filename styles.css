@@ -179,7 +179,7 @@ body {
   .menu-icon{
       display: block;
       position: absolute;
-      top: 20px;
+      top: 27px;
       right: 40px;
   }
   #menuList{
@@ -529,13 +529,14 @@ body {
 
 .menu-item h1 {
   font-size: 1em;
+  font-family: heviatas;
   margin-top: 10px;
 }
 
 .menu-item p {
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 5px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: noodle;
 }
 
 .menu-favorit {
