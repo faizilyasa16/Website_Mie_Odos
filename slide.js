@@ -1,3 +1,19 @@
+        // Function to remove data-aos attribute on mobile
+        function removeAOSOnMobile() {
+          if (window.innerWidth <= 768) {
+              var elements = document.querySelectorAll('[data-aos]');
+              elements.forEach(function(element) {
+                  element.removeAttribute('data-aos');
+              });
+          }
+      }
+
+      // Run the function on initial load
+      removeAOSOnMobile();
+
+      // Run the function on window resize
+      window.addEventListener('resize', removeAOSOnMobile);
+
 let menuList = document.getElementById("menuList")
 menuList.style.maxHeight = "0px";
 

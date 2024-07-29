@@ -496,11 +496,12 @@ body {
   }
   
     .teks1 {
-      width: 300px;
-      max-width: 500px;
-      margin: 20px;
+      max-width: 100%;
       font-family: noodle;
       font-size: 13px;
+    }
+    .teks1 p{
+      width: 300px;
     }
 }
 
@@ -584,9 +585,9 @@ body {
 }
 @media (max-width: 1022px) {
   .menu-item {
-    display: inline-block;
-    width: 45%;
-    margin: 10px auto;
+    display: block;
+    width: 70%;
+    margin: 50px auto;
     text-align: center;
   }
 
@@ -829,4 +830,65 @@ footer{
       padding: 8px;
       margin: 4px;
   }
+}
+
+.section4.parallax {
+  position: relative;
+  background-image: url(section.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+}
+
+.section4.parallax .text-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+
+}
+
+.section4.parallax .text {
+  font-family: heviatas;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+               5px 5px 70px rgba(255, 255, 255, 0.5);
+  position: relative;
+  transition: z-index 0.5s;
+  top: 50px;
+  display: inline;
+  border-bottom: 3px solid white;
+}
+
+.section4.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .section4.parallax .text {
+    font-family: heviatas;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+                 5px 5px 70px rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition: z-index 0.5s;
+    top: 50px;
+  }
+  
 }
