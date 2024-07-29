@@ -892,3 +892,35 @@ footer{
   }
   
 }
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: black;
+  padding: 20px; /* Optional: for better visualization */
+  margin: 100px;
+}
+.lokasi {
+  max-width: 600px;
+}
+section h1 {
+  font-size: 2em;
+  font-family: heviatas;
+}
+section p {
+  font-size: 1em;
+  font-family: noodle;
+}
+
+iframe {
+  border-radius: 2em;
+  border: none;
+  width: 500px;
+  height: 500px;
+  transition: 0.3 ease-in-out;
+}
+iframe:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
