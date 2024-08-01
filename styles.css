@@ -528,7 +528,7 @@ body {
 }
 
 .menu-item h1 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: heviatas;
   margin-top: 10px;
 }
@@ -1005,6 +1005,7 @@ section p {
   right: 0;
   bottom: 0;
   z-index: 0;
+  
 }
 @media (max-width: 768px) {
 
@@ -1033,10 +1034,10 @@ section p {
   border-radius: 5px;
   width: 100%;
 }
-/* .image-container img:hover{
+.image-container img:hover{
   transform: scale(1.1);
   transition: 0.5s;
-} */
+}
 .special-img {
   width: auto;
   height: 370px;
