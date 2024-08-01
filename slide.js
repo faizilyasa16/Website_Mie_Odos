@@ -1,4 +1,9 @@
-        // Function to remove data-aos attribute on mobile
+function openLightbox(imageSrc) {
+  document.getElementById("lightbox-img").src = imageSrc;
+  document.getElementById("lightbox").style.display = "block";
+}
+
+ // Function to remove data-aos attribute on mobile
         function removeAOSOnMobile() {
           if (window.innerWidth <= 768) {
               var elements = document.querySelectorAll('[data-aos]');
@@ -72,3 +77,8 @@ function autoSlide() {
 }
 
 setInterval(autoSlide, 6000); // Change slide every 3 seconds
+
+function openLightbox(imageSrc) {
+  document.getElementById("lightbox-img").src = imageSrc;
+  document.getElementById("lightbox").style.display = "block";
+}

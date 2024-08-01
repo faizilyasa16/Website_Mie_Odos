@@ -1017,3 +1017,27 @@ section p {
     top: 50px;
   }
 }
+.gallery{
+  max-width: 60%;
+  margin:20px auto;
+  height: auto;
+}
+.image-container{
+  columns:3 250px;
+  gap:15px;
+}
+
+.image-container img{
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.image-container img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.special-img {
+  width: auto;
+  height: 340px;
+  object-fit: cover;
+}
