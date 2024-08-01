@@ -908,6 +908,7 @@ section {
 }
 .lokasi {
   max-width: 500px;
+  
 }
 .lokasi h1 {
   font-size: 40px;
@@ -1018,7 +1019,7 @@ section p {
   }
 }
 .gallery{
-  max-width: 60%;
+  max-width: 65%;
   margin:20px auto;
   height: auto;
 }
@@ -1032,12 +1033,12 @@ section p {
   border-radius: 5px;
   width: 100%;
 }
-.image-container img:hover{
+/* .image-container img:hover{
   transform: scale(1.1);
   transition: 0.5s;
-}
+} */
 .special-img {
   width: auto;
-  height: 340px;
+  height: 370px;
   object-fit: cover;
 }
