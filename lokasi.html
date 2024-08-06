@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Odos</title>
     <link rel="icon" href="images.png" type="image/x-icon">
+    <link rel="stylesheet" href="lightbox2-dev/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -54,16 +55,36 @@
 
       <div class="gallery">
         <div class="image-container">
-          <img src="gallery/laen.png" alt="">
-          <img src="gallery/ijo.png" alt="">
-          <img src="gallery/1.png" alt="">
-          <img src="gallery/merah.png" alt="">
-          <img src="gallery/laen2.png" alt="">
-          <img src="gallery/cyan.png" alt="" class="special-img">
-          <img src="gallery/2.png" alt="">
-          <img src="gallery/oren.png" alt="">
-          <img src="gallery/3.png" alt="">
+          <a href="gallerybaru/gallery2.jpg" data-lightbox="gridImage">
+            <img src="gallery/laen.png" alt="">
+          </a>
+          <a href="gallerybaru/gallery4.jpg" data-lightbox="gridImage">
+            <img src="gallery/ijo.png" alt="">
+          </a>
+          <a href="gallerybaru/1000145238_LE_auto_x2.jpg" data-lightbox="gridImage">
+            <img src="gallery/1.png" alt="">
+          </a>
+          <a href="gallerybaru/1000145229.png" data-lightbox="gridImage">
+            <img src="gallery/merah.png" alt="">
+          </a>
+          <a href="gallerybaru/gallery3.jpg" data-lightbox="gridImage">
+            <img src="gallery/laen2.png" alt="">
+          </a>
+          <a href="gallerybaru/1000145215-transformed.jpeg" data-lightbox="gridImage">
+            <img src="gallery/cyan.png" alt="" class="special-img">
+          </a>
+          <a href="gallerybaru/IMG-20240801-WA0031-fotor-enhance-2024080119514_LE_auto_x2.jpg" data-lightbox="gridImage">
+            <img src="gallery/2.png" alt="">
+          </a>
+          <a href="gallerybaru/gallery4.jpg" data-lightbox="gridImage">
+            <img src="gallery/oren.png" alt="">
+          </a>
+          <a href="gallerybaru/1000145239_LE_auto_x2.jpg" data-lightbox="gridImage">
+            <img src="gallery/3.png" alt="">
+          </a>
+        </div>
       </div>
+      
       </div>
       <footer>
         <div class="footerContainer">
@@ -88,9 +109,15 @@
 
       <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
       <script src="slide.js"></script>
+      <script src="lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init();
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'disableScrolling': true
+        })
       </script>
 </body>
 </html>
