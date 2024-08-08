@@ -1288,4 +1288,12 @@ textarea::-webkit-scrollbar-thumb {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  [data-aos] {
+      opacity: 1 !important;
+      transform: none !important; /* Mengatur transformasi ke awal posisi */
+      transition: none !important;
+      /* Kamu juga bisa menambahkan properti lain sesuai kebutuhan */
+  }
+}
 
