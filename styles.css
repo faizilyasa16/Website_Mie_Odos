@@ -390,6 +390,24 @@ body {
 }
 @media (max-width: 768px) {
 
+  .section1.parallax {
+    position: relative;
+    background-image: url(section.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 20px; /* Reduced padding-bottom */
+    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
   .section1.parallax .text {
     font-family: heviatas;
     font-size: 35px;
@@ -397,7 +415,7 @@ body {
                  5px 5px 70px rgba(255, 255, 255, 0.5);
     position: relative;
     transition: z-index 0.5s;
-    top: 50px;
+    top: 10px;
   }
 }
 
@@ -664,6 +682,24 @@ body {
   z-index: 0;
 }
 @media (max-width: 768px) {
+  .section2.parallax {
+    position: relative;
+    background-image: url(section.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 20px; /* Reduced padding-bottom */
+    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 0;
+}
+
   .section2.parallax .text {
     font-family: heviatas;
     font-size: 30px;
@@ -671,7 +707,7 @@ body {
                  5px 5px 70px rgba(255, 255, 255, 0.5);
     position: relative;
     transition: z-index 0.5s;
-    top: 50px;
+    top: 10px;
   }
   
 }
@@ -885,14 +921,32 @@ footer{
   z-index: 0;
 }
 @media (max-width: 768px) {
+  .section4.parallax {
+    position: relative;
+    background-image: url(section.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 20px; /* Reduced padding-bottom */
+    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 0;
+}
+
   .section4.parallax .text {
     font-family: heviatas;
-    font-size: 20px;
+    font-size: 35px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
                  5px 5px 70px rgba(255, 255, 255, 0.5);
     position: relative;
     transition: z-index 0.5s;
-    top: 50px;
+    top: 10px;
   }
   
 }
@@ -961,7 +1015,34 @@ section p {
 .gallery {
   height: 100vh;
 }
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+  }
 
+  .maps img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lokasi h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .lokasi p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .jam-operasional p {
+    font-weight: bold;
+    font-size: 20px; /* Anda bisa menyesuaikan ukuran font sesuai kebutuhan */
+    font-family: heviatas;
+  }
+}
 .section5.parallax {
   position: relative;
   background-image: url(section.jpg);
@@ -1008,15 +1089,32 @@ section p {
   
 }
 @media (max-width: 768px) {
+  .section5.parallax {
+    position: relative;
+    background-image: url(section.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 20px; /* Reduced padding-bottom */
+    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 0;
+}
 
-  .section1.parallax .text {
+  .section5.parallax .text {
     font-family: heviatas;
     font-size: 35px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
                  5px 5px 70px rgba(255, 255, 255, 0.5);
     position: relative;
     transition: z-index 0.5s;
-    top: 50px;
+    top: 10px;
   }
 }
 .gallery{
@@ -1043,17 +1141,20 @@ section p {
   height: 370px;
   object-fit: cover;
 }
+
+/* General styles remain the same */
 .form-container {
   position: relative;
   width: 100%;
-  height: 60vh; /* Full viewport height */
+  height: auto;
+  margin: 40px 0px;
 }
+
 .contact form {
   width: 670px;
-  height: 400px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
+  justify-content: center;
+  align-items: center;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   flex-wrap: wrap;
@@ -1137,3 +1238,54 @@ textarea::-webkit-scrollbar-thumb {
 .contact form #button:hover {
   opacity: 0.7;
 }
+@media (max-width: 768px) {
+  .contact form {
+    width: 90%;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center; /* Center all form elements horizontally */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .contact form h1 {
+    font-size: 24px;
+    width: 100%; /* Ensure the header spans the full width */
+    text-align: center; /* Center text alignment */
+    margin-bottom: 20px; /* Add margin below the header */
+  }
+  .contact form #lastName,
+  .contact form #mobile {
+    margin-left: 0;
+  }
+  .contact form input,
+  .contact form textarea {
+    width: 100%; /* Full width for better usability on small screens */
+    margin-left: 0;
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 15px; /* Uniform margin between inputs */
+  }
+
+  .contact form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+  }
+
+  .contact form h4 {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center; /* Center the additional information */
+  }
+
+  .contact form #button {
+    width: 80%;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 20px; /* Ensure margin above the button for spacing */
+  }
+}
+
+
