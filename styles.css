@@ -1422,6 +1422,7 @@ textarea::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center; /* Centers the .item-menu horizontally */
   padding: 0 200px; /* Adds 200px padding to the top and bottom */
+  margin-bottom: 80px;
 }
 
 .item-menu {
@@ -1438,7 +1439,7 @@ textarea::-webkit-scrollbar-thumb {
   margin: 40px 0;
   font-family: heviatas;
   font-size: 24px;
-  color: #333;
+  color: black;
   letter-spacing: 1px;
   width: 100%;
 }
@@ -1448,7 +1449,7 @@ textarea::-webkit-scrollbar-thumb {
   content: "";
   flex: 0.1; /* Shorter lines */
   height: 2px;
-  background-color: #888;
+  background-color: black;
 }
 
 .item-menu > h1::before {
