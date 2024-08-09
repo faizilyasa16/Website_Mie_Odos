@@ -1446,17 +1446,17 @@ textarea::-webkit-scrollbar-thumb {
 .item-menu > h1::before,
 .item-menu > h1::after {
   content: "";
-  flex: 0.5; /* Shorter lines */
+  flex: 0.1; /* Shorter lines */
   height: 2px;
   background-color: #888;
 }
 
 .item-menu > h1::before {
-  margin-right: 15%;
+  margin-right: 2%;
 }
 
 .item-menu > h1::after {
-  margin-left: 15%;
+  margin-left: 2%;
 }
 
 
