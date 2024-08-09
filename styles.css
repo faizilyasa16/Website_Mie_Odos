@@ -1418,3 +1418,106 @@ textarea::-webkit-scrollbar-thumb {
   
 }
 
+.nama-menu {
+  display: flex;
+  justify-content: center; /* Centers the .item-menu horizontally */
+  padding: 0 200px; /* Adds 200px padding to the top and bottom */
+}
+
+.item-menu {
+  display: flex;
+  justify-content: space-between; /* Distributes the items evenly */
+  flex-wrap: wrap; /* Ensures that items wrap to the next line if there's not enough space */
+  max-width: 100%; /* Ensures it doesn't exceed the parent's width */
+}
+.item-menu > h1 {
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  position: relative;
+  margin: 40px 0;
+  font-family: heviatas;
+  font-size: 24px;
+  color: #333;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.item-menu > h1::before,
+.item-menu > h1::after {
+  content: "";
+  flex: 0.5; /* Shorter lines */
+  height: 2px;
+  background-color: #888;
+}
+
+.item-menu > h1::before {
+  margin-right: 15%;
+}
+
+.item-menu > h1::after {
+  margin-left: 15%;
+}
+
+
+.mie-odos {
+  flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  margin: 5px;
+  text-align: center; /* Aligns content within each item to center */
+  margin-top: 40px;
+}
+.mie-odos h1 {
+  font-family: heviatas;
+  font-size: 1.1em;
+  margin: 0;
+
+}
+.mie-odos p {
+  font-family: noodle;
+  font-size: 1em;
+  margin-top: 10px;
+}
+.mie-odos img {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  height: auto;
+}
+.mie-bakar-kering {
+  flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  margin: 5px;
+  text-align: center; /* Aligns content within each item to center */
+}
+.mie-bakar-kering h1 {
+  font-family: heviatas;
+  font-size: 1.1em;
+  margin: 0;
+
+}
+.mie-bakar-kering p {
+  font-family: noodle;
+  font-size: 1em;
+  margin-top: 10px;
+}
+.mie-bakar-kering img {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  height: auto;
+}
+.nasi {
+  flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  margin: 5px;
+  text-align: center; /* Aligns content within each item to center */
+}
+.nasi h1 {
+  font-family: heviatas;
+  font-size: 1.1em;
+  margin: 0;
+
+}
+.nasi p {
+  font-family: noodle;
+  font-size: 1em;
+  margin-top: 10px;
+}
+.nasi img {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  height: auto;
+}
