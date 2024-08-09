@@ -564,7 +564,7 @@ body {
 }
 
 .btn {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .button {
   cursor: pointer;
@@ -576,6 +576,7 @@ body {
   border-radius: 10px;
   font-family: heviatas;
   overflow: hidden;
+  display: inline-block;
 }
 
 .button::before {
@@ -590,7 +591,7 @@ body {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 300ms ease-in-out;
-  z-index: 1; /* Pastikan overlay berada di bawah teks */
+  z-index: 1; /* Ensure overlay is below text */
 }
 
 .button:hover::before {
@@ -600,7 +601,7 @@ body {
 
 .button span {
   position: relative;
-  z-index: 2; /* Pastikan teks berada di atas overlay */
+  z-index: 2; /* Ensure text is above overlay */
 }
 @media (max-width: 1022px) {
   .menu-item {
@@ -1041,6 +1042,7 @@ section p {
     font-weight: bold;
     font-size: 20px; /* Anda bisa menyesuaikan ukuran font sesuai kebutuhan */
     font-family: heviatas;
+    margin-top: 20px;
   }
 }
 .section5.parallax {
@@ -1296,4 +1298,52 @@ textarea::-webkit-scrollbar-thumb {
       /* Kamu juga bisa menambahkan properti lain sesuai kebutuhan */
   }
 }
+
+.line-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.line-text {
+  font-family: heviatas;
+  font-size: 1.5em;
+  column-gap: 1.2rem;
+}
+.line-text::before,
+.line-text::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #000;
+  margin: 0 10px;
+}
+
+.line-text span {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.menu-makanan {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Mengatur semua item agar sejajar di bagian atas (segaris) */
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.gambar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menyelaraskan gambar dan tombol di tengah secara horizontal */
+  margin: 10px;
+}
+
+.menu-makanan img {
+  width: 250px;
+  height: auto;
+}
+
 
