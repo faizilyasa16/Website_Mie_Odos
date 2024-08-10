@@ -1431,6 +1431,46 @@ textarea::-webkit-scrollbar-thumb {
   flex-wrap: wrap; /* Ensures that items wrap to the next line if there's not enough space */
   max-width: 100%; /* Ensures it doesn't exceed the parent's width */
 }
+.btn2 {
+  margin-top: 20px;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  background: #ee6352;
+  color: white;
+  padding: 1em 2em;
+  position: relative;
+  border-radius: 10px;
+  font-family: heviatas;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.button1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+  z-index: 1; /* Ensure overlay is below text */
+}
+
+.button1:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.button1 span {
+  position: relative;
+  z-index: 2; /* Ensure text is above overlay */
+}
 .item-menu > h1 {
   display: flex;
   justify-content: center; /* Center the text horizontally */
@@ -1521,4 +1561,198 @@ textarea::-webkit-scrollbar-thumb {
 .nasi img {
   max-width: 100%; /* Ensures the image doesn't overflow */
   height: auto;
+}
+@media (max-width: 768px) {
+
+  .line-text {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+  .line-text::before,
+  .line-text::after {
+    margin: 0 5px;
+  }
+
+  .menu-makanan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    gap: 10px; /* Adjust the gap between items */
+    justify-content: center;
+  }
+  
+  .gambar-menu {
+    margin: 5px;
+  }
+  
+  .menu-makanan img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .nama-menu {
+    padding: 0 20px; /* Reduce padding */
+    margin-bottom: 40px;
+  }
+
+  .item-menu {
+    justify-content: center; /* Center the items */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add spacing between items */
+  }
+
+  .item-menu > h1 {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+
+  .item-menu > h1::before,
+  .item-menu > h1::after {
+    flex: 1; /* Make lines full width */
+  }
+
+  .mie-odos,
+  .mie-bakar-kering,
+  .nasi {
+    flex: 1 1 100%; /* Each item takes full width */
+    margin: 10px 0; /* Add vertical margin */
+  }
+
+  .mie-odos h1,
+  .mie-bakar-kering h1,
+  .nasi h1 {
+    font-size: 1em;
+  }
+
+  .mie-odos p,
+  .mie-bakar-kering p,
+  .nasi p {
+    font-size: 0.9em;
+  }
+  .btn2 {
+    margin-top: 20px;
+  }
+  .button1 {
+    cursor: pointer;
+    border: 0;
+    background: #ee6352;
+    color: white;
+    padding: 1em 2em;
+    position: relative;
+    border-radius: 10px;
+    font-family: heviatas;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .button1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+    z-index: 1; /* Ensure overlay is below text */
+  }
+  
+  .button1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .button1 span {
+    position: relative;
+    z-index: 2; /* Ensure text is above overlay */
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn2 {
+    margin-top: 20px;
+  }
+  .button1 {
+    cursor: pointer;
+    border: 0;
+    background: #ee6352;
+    color: white;
+    padding: 1em 2em;
+    position: relative;
+    border-radius: 10px;
+    font-family: heviatas;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .button1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+    z-index: 1; /* Ensure overlay is below text */
+  }
+  
+  .button1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .button1 span {
+    position: relative;
+    z-index: 2; /* Ensure text is above overlay */
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .btn2 {
+    margin-top: 20px;
+  }
+  .button1 {
+    cursor: pointer;
+    border: 0;
+    background: #ee6352;
+    color: white;
+    padding: 1em 2em;
+    position: relative;
+    border-radius: 10px;
+    font-family: heviatas;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .button1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+    z-index: 1; /* Ensure overlay is below text */
+  }
+  
+  .button1:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .button1 span {
+    position: relative;
+    z-index: 2; /* Ensure text is above overlay */
+    font-size: 7px;
+  }
 }
