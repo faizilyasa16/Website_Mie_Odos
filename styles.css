@@ -642,9 +642,9 @@ body {
   }
 
   .menu-item p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 5px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: noodle;
   }
 
 }
@@ -661,10 +661,14 @@ body {
     justify-content: center;
     margin-top: 20px;
   }
-
-
 }
-
+@media (max-width: 414px) {
+  .menu-item p {
+    font-size: 0.7em;
+    margin-top: 5px;
+    font-family: noodle;
+  }
+}
 
 .section2.parallax {
   position: relative;
