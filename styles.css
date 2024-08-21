@@ -1541,10 +1541,11 @@ textarea::-webkit-scrollbar-thumb {
   margin: 5px;
   text-align: center; /* Aligns content within each item to center */
   margin-top: 40px;
+  margin-bottom: 0px;
 }
 .mie-odos h1 {
   font-family: heviatas;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0;
 
 }
