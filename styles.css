@@ -1537,16 +1537,16 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .mie-odos {
-  flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
-  margin-left: 5px;
-  margin-right: 5px;
+  flex: 1 1 calc(20% - 20px); /* Mengubah jarak antar elemen dengan menambah margin */
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center; /* Aligns content within each item to center */
   margin-top: 40px;
   margin-bottom: 0px;
 }
 .mie-odos h1 {
   font-family: heviatas;
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 0;
 
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 <body>
     <nav>
@@ -31,21 +32,22 @@
           </div>
         </div>
      </nav>
-<div class="form-container">
-     <div class="contact">
-        <form>
-            <h1>Contact Us Form</h1>
-            <input type="text" id="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="mobile" placeholder="Mobile" required>
-            <textarea required id="massage" placeholder="Type Your Message Here..."></textarea>
-            <div class="btn">
-                <button class="button button-one" "><span>Submit</span></button>
-            </div>
-        </form>
+     <div class="form-container">
+        <div class="contact">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h1>Contact Us Form</h1>
+                <input type="hidden" name="access_key" value="b6d73230-5089-4c1e-8b8f-83af064fa562">
+                <input type="text" id="firstName" name="first_name" placeholder="First Name" required>
+                <input type="text" id="lastName" name="last_name" placeholder="Last Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="mobile" name="Phone Number" placeholder="Phone Number" required>
+                <textarea required id="massage" name="message" placeholder="Type Your Message Here..."></textarea>
+                <div class="btn">
+                    <button class="button button-one"><span>Submit</span></button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
     <footer>
         <div class="footerContainer">
             <div class="socialIcons">
