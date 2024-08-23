@@ -1556,9 +1556,11 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 .mie-odos img {
-  max-width: 100%; /* Ensures the image doesn't overflow */
+  width: 110%; /* Memperbesar gambar sedikit */
+  max-width: 110%; /* Mencegah gambar meluap */
   height: auto;
 }
+
 .mie-bakar-kering {
   flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
   margin: 5px;
