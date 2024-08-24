@@ -1537,7 +1537,7 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .mie-odos {
-  flex: 1 1 calc(20% - 20px); /* Mengubah jarak antar elemen dengan menambah margin */
+  flex: 1 1 calc(25% - 40px); /* Mengubah jarak antar elemen dengan menambah margin */
   margin-left: 20px;
   margin-right: 20px;
   text-align: center; /* Aligns content within each item to center */
@@ -1556,11 +1556,9 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 .mie-odos img {
-  width: 110%; /* Memperbesar gambar sedikit */
-  max-width: 110%; /* Mencegah gambar meluap */
+  max-width: 80%; /* Ensures the image doesn't overflow */
   height: auto;
 }
-
 .mie-bakar-kering {
   flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
   margin: 5px;
