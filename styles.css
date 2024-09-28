@@ -1537,13 +1537,14 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .mie-odos {
-  flex: 1 1 calc(25% - 40px); /* Mengubah jarak antar elemen dengan menambah margin */
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center; /* Aligns content within each item to center */
+  flex: 1 1 calc(25% - 10px); /* Membuat elemen lebih besar dengan mengurangi pengurangan piksel */
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
   margin-top: 40px;
   margin-bottom: 0px;
 }
+
 .mie-odos h1 {
   font-family: heviatas;
   font-size: 0.9em;
@@ -1580,7 +1581,7 @@ textarea::-webkit-scrollbar-thumb {
   height: auto;
 }
 .nasi {
-  flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  flex: 1 1 calc(30% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
   margin: 5px;
   text-align: center; /* Aligns content within each item to center */
 }
