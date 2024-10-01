@@ -1606,6 +1606,7 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 1.2em;
     margin-top: 40px;
   }
+
   .line-text::before,
   .line-text::after {
     margin: 0 5px;
@@ -1613,9 +1614,18 @@ textarea::-webkit-scrollbar-thumb {
 
   .menu-makanan {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
-    gap: 10px; /* Adjust the gap between items */
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); /* Buat dua kolom dengan lebar yang sama */
+    gap: 20px; /* Atur jarak antar item */
+    justify-content: center; /* Pusatkan grid */
+  }
+
+  .menu-makanan > :nth-child(3) {
+    grid-column: 1 / span 2; /* Membuat item ketiga mengambil dua kolom */
+    justify-self: center; /* Pastikan item ketiga berada di tengah */
+  }
+  .menu-makanan > :nth-child(3) img {
+    max-width: 50%; /* Atur max-width sesuai kebutuhan */
+    margin: 0 auto; /* Pastikan gambar tetap berada di tengah */
   }
   
   .gambar-menu {
@@ -1626,15 +1636,16 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     max-width: 100%;
   }
+
   .nama-menu {
-    padding: 0 20px; /* Reduce padding */
+    padding: 0 20px; /* Kurangi padding */
     margin-bottom: 40px;
   }
 
   .item-menu {
-    justify-content: center; /* Center the items */
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Add spacing between items */
+    justify-content: center; /* Pusatkan item */
+    flex-direction: column; /* Tumpuk item secara vertikal */
+    gap: 20px; /* Tambahkan jarak antar item */
   }
 
   .item-menu > h1 {
@@ -1644,14 +1655,14 @@ textarea::-webkit-scrollbar-thumb {
 
   .item-menu > h1::before,
   .item-menu > h1::after {
-    flex: 1; /* Make lines full width */
+    flex: 1; /* Membuat garis memenuhi lebar */
   }
 
   .mie-odos,
   .mie-bakar-kering,
   .nasi {
-    flex: 1 1 100%; /* Each item takes full width */
-    margin: 10px 0; /* Add vertical margin */
+    flex: 1 1 100%; /* Setiap item mengambil lebar penuh */
+    margin: 10px 0; /* Tambahkan margin vertikal */
   }
 
   .mie-odos h1,
@@ -1665,9 +1676,11 @@ textarea::-webkit-scrollbar-thumb {
   .nasi p {
     font-size: 0.9em;
   }
+
   .btn2 {
     margin-top: 20px;
   }
+
   .button1 {
     cursor: pointer;
     border: 0;
@@ -1693,7 +1706,7 @@ textarea::-webkit-scrollbar-thumb {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
-    z-index: 1; /* Ensure overlay is below text */
+    z-index: 1; /* Pastikan overlay berada di bawah teks */
   }
   
   .button1:hover::before {
@@ -1703,10 +1716,11 @@ textarea::-webkit-scrollbar-thumb {
   
   .button1 span {
     position: relative;
-    z-index: 2; /* Ensure text is above overlay */
+    z-index: 2; /* Pastikan teks berada di atas overlay */
     font-size: 9px;
   }
 }
+
 
 @media screen and (max-width: 375px) {
   .btn2 {
