@@ -1712,7 +1712,15 @@ textarea::-webkit-scrollbar-thumb {
   .minuman p {
     font-size: 0.9em;
   }
-
+  .mie-odos:nth-last-child(2) img {
+    max-width: 100%; /* Mengubah lebar gambar pada elemen kedua terakhir */
+    height: auto;
+  }
+  
+  .mie-odos:last-child img {
+    max-width: 100%; /* Mengubah lebar gambar pada elemen terakhir */
+    height: auto;
+  }
   .btn2 {
     margin-top: 20px;
   }
