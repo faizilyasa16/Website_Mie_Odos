@@ -1,18 +1,13 @@
-@font-face {
-  font-family: myFont;
-  src: url(Geskal.ttf);
-}
-@font-face {
-  font-family: takCubit;
-  src: url(Tak-Cubit.ttf);
-}
+
 @font-face {
   font-family: heviatas;
   src: url(Heavitas.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: noodle;
   src: url(Super_Noodles.otf);
+  font-display: swap;
 }
 
 * {
@@ -24,7 +19,7 @@
 body {
   overflow-x: hidden;
   background-color: #FFF9C4;
-  background-image: url('design.png');
+  background-image: url('design.webp');
   background-size: auto;
   padding-top: 80px;
 }
@@ -38,10 +33,10 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  z-index: 1000; /* Atur z-index header lebih tinggi */
-  position: -webkit-sticky; /* For Safari */
+  z-index: 1000; 
+  position: -webkit-sticky; 
   position: fixed;
-  top: 0; /* Sticks to the top of the viewport */
+  top: 0; 
 }
 
 
@@ -49,7 +44,7 @@ body {
   margin: 10px 50px;
   display: flex;
   align-items: center;
-  gap: 10px; /* Menambahkan jarak antara gambar dan teks */
+  gap: 10px; 
 }
 
 .vertikal-line {
@@ -72,12 +67,12 @@ body {
 .section ul {
   list-style-type: none;
   display: flex;
-  gap: 20px; /* Menambahkan jarak antar item menu */
+  gap: 20px;
   margin-bottom: 30px;
 
 }
 .section ul.active {
-  height: auto; /* Change to 'auto' to fit the content */
+  height: auto; 
 }
 .section li a {
   font-family: noodle;
@@ -88,7 +83,7 @@ body {
   padding: 7px 16px;
   text-decoration: none;
   position: relative;
-  overflow: hidden; /* Untuk mengatur overflow pseudo-element */
+  overflow: hidden; 
 }
 
 .section li a::after {
@@ -115,11 +110,11 @@ body {
   }
 
   .gambar img {
-      width: 50px; /* Adjust width for mobile view */
+      width: 50px; 
   }
 
   .gambar h5 {
-      font-size: 10px; /* Adjust font size for mobile view */
+      font-size: 10px; 
   }
 }
 .menu-icon{
@@ -135,7 +130,7 @@ body {
   body {
     overflow-x: hidden;
     background-color: #FFF9C4;
-    background-image: url('design.png');
+    background-image: url('design.webp');
     background-size: auto;
     padding-top: 0;
   }
@@ -147,10 +142,10 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 1000; /* Atur z-index header lebih tinggi */
-    position: -webkit-sticky; /* For Safari */
+    z-index: 1000; 
+    position: -webkit-sticky; 
     position: sticky;
-    top: 0; /* Sticks to the top of the viewport */
+    top: 0; 
   }
   .section ul{
       position: absolute;
@@ -189,8 +184,8 @@ body {
 .slides {
   width: 90%;
   position: relative;
-  margin: 50px auto; /* Remove margin */
-  padding: 0; /* Remove padding */
+  margin: 50px auto; 
+  padding: 0; 
 }
 
 .slides .slide{
@@ -273,8 +268,8 @@ body {
   .slides {
     width: 100%;
     position: relative;
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0; 
+    padding: 0; 
   }
 
   .slides .navigation .prev, .slides .navigation .next {
@@ -297,8 +292,8 @@ body {
   .slides {
     width: 100%;
     position: relative;
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0;
+    padding: 0; 
   }
   .slides .navigation .prev, .slides .navigation .next{
     font-size: 15px;
@@ -319,8 +314,8 @@ body {
   .slides {
     width: 100%;
     position: relative;
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0; 
+    padding: 0; 
   }
   .slides .navigation .prev, .slides .navigation .next{
     font-size: 12px;
@@ -351,8 +346,8 @@ body {
   .slides {
     width: 100%;
     position: relative;
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0; 
+    padding: 0; 
   }
   .slides .navigation .prev, .slides .navigation .next{
     font-size: 11px;
@@ -369,22 +364,18 @@ body {
   }
 }
 
-
-
-/* Parallax effect for About Us section */
 .section1.parallax {
   position: relative;
-  background-image: url(section.jpg);
+  background-image: url(section.webp);
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+
 }
 
 .section1.parallax .text-wrapper {
@@ -400,8 +391,7 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
                5px 5px 70px rgba(255, 255, 255, 0.5);
   position: relative;
-  transition: z-index 0.5s;
-  top: 50px;
+
 }
 
 .section1.parallax::before {
@@ -417,20 +407,13 @@ body {
 
   .section1.parallax {
     position: relative;
-    background-image: url(section.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    padding-bottom: 20px; /* Reduced padding-bottom */
-    padding-top: 0; /* Set padding-top to 0 or a small positive value */
-    width: 100%;
+
+    padding-bottom: 20px;
+    padding-top: 0;
     margin: 0 auto;
-    border-radius: 0;
 }
 
   .section1.parallax .text {
@@ -439,7 +422,6 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
                  5px 5px 70px rgba(255, 255, 255, 0.5);
     position: relative;
-    transition: z-index 0.5s;
     top: 10px;
   }
 }
@@ -450,6 +432,7 @@ body {
   align-items: center;
   padding: 20px;
   margin: 100px;
+
 }
 
 .gambar1 {
@@ -460,7 +443,7 @@ body {
 
 .gambar1 img {
   width: 100%;
-  max-width: 300px; /* Adjust as needed */
+  max-width: 300px; 
   height: auto;
   border-radius: 20px;
 }
@@ -477,7 +460,9 @@ body {
   margin: 20px;
   font-family: noodle;
   font-size: 13px;
+
 }
+
 
 @media (max-width: 992px) {
   .gambar1 {
@@ -552,8 +537,7 @@ body {
 
 .menu-favorit {
   text-align: center;
-  padding: 20px 0; /* Padding atas dan bawah untuk memberikan ruang */
-  background-color: #f9f9f9; /* Warna latar belakang untuk kontras */
+  padding: 20px 0;
 }
 
 
@@ -562,31 +546,32 @@ body {
   width: 30%;
   margin: 15px;
   text-align: center;
+  min-height: 400px; /* Sesuaikan dengan ukuran yang diperlukan */
+
 }
 
 .menu-item img {
-  width: 100%;
+  width: 100%; /* Gambar akan menyesuaikan dengan lebar kontainer */
   height: auto;
-  border-radius: 8px;
+  aspect-ratio: 3 / 2; /* Menjaga rasio aspek tetap */
 }
 
+
+
 .menu-item h1 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: heviatas;
   margin-top: 10px;
 }
 
 .menu-item p {
-  font-size: 13px;
+  font-size: clamp(10px, 2vw, 12px);
+  text-align: center;
   margin-top: 5px;
   font-family: noodle;
 }
 
-.menu-favorit {
-  font-family: noodle;
-  background-color: #FFF9C4;
-  background-image: url(design.png);
-}
+
 
 .btn {
   margin-top: 20px;
@@ -616,7 +601,7 @@ body {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 300ms ease-in-out;
-  z-index: 1; /* Ensure overlay is below text */
+  z-index: 1;
 }
 
 .button:hover::before {
@@ -626,7 +611,7 @@ body {
 
 .button span {
   position: relative;
-  z-index: 2; /* Ensure text is above overlay */
+  z-index: 2; 
 }
 @media (max-width: 1022px) {
   .menu-item {
@@ -672,7 +657,7 @@ body {
 
 .section2.parallax {
   position: relative;
-  background-image: url(section.jpg);
+  background-image: url(section.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -682,7 +667,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+  padding-bottom: 100px; 
 }
 
 .section2.parallax .text-wrapper {
@@ -714,7 +699,7 @@ body {
 @media (max-width: 768px) {
   .section2.parallax {
     position: relative;
-    background-image: url(section.jpg);
+    background-image: url(section.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -723,8 +708,8 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    padding-bottom: 20px; /* Reduced padding-bottom */
-    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    padding-bottom: 20px;
+    padding-top: 0; 
     width: 100%;
     margin: 50px auto;
     border-radius: 0;
@@ -741,16 +726,13 @@ body {
   }
   
 }
-.isian {
- height: 100vh;
-}
 
 .testimonials{
   padding: 40px 0;
   background: #FFF9C4;
   color: #434343;
   text-align: center;
-  background-image: url(design.png);
+  background-image: url(design.webp);
 }
 .row{
   display: flex;
@@ -768,7 +750,7 @@ body {
   background: white;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .testimonial img{
   width: 100px;
@@ -827,12 +809,12 @@ footer{
   color: black;
   opacity: 0,9;
 }
-/* Hover affect on social media icon */
+
 .socialIcons a:hover{
   transition: 0.5s;
 }
 .socialIcons a:hover .fa-facebook {
-  color: #3b5998; /* Warna Facebook saat di-hover */
+  color: #3b5998;
 }
 
 .socialIcons a:hover .fa-instagram {
@@ -842,7 +824,7 @@ footer{
 }
 
 .socialIcons a:hover .fa-twitter {
-  color: #1da1f2; /* Warna Twitter saat di-hover */
+  color: #1da1f2; 
 }
 .socialIcons a:hover i{
   color: white;
@@ -899,18 +881,18 @@ footer{
   .socialIcons {
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Menyusun ikon sosial secara horizontal */
+    flex-direction: row;
   }
 
   .socialIcons a {
     padding: 8px;
-    margin: 4px; /* Memberikan sedikit ruang antara ikon secara horizontal */
+    margin: 4px;
   }
 }
 
 .section4.parallax {
   position: relative;
-  background-image: url(section.jpg);
+  background-image: url(section.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -924,7 +906,7 @@ footer{
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+  padding-bottom: 100px; 
 }
 
 .section4.parallax .text-wrapper {
@@ -959,7 +941,7 @@ footer{
 @media (max-width: 768px) {
   .section4.parallax {
     position: relative;
-    background-image: url(section.jpg);
+    background-image: url(section.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -968,8 +950,8 @@ footer{
     align-items: center;
     justify-content: center;
     color: white;
-    padding-bottom: 20px; /* Reduced padding-bottom */
-    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    padding-bottom: 20px; 
+    padding-top: 0; 
     width: 100%;
     margin: 50px auto;
     border-radius: 0;
@@ -992,7 +974,7 @@ section {
   justify-content: center;
   gap: 50px;
   color: black;
-  padding: 20px; /* Optional: for better visualization */
+  padding: 20px; 
   margin: 100px;
   
 }
@@ -1025,7 +1007,7 @@ section p {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #ca3433; /* Background color */
+  background-color: #ca3433; 
   border-radius: 2em;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: 0.3s ease-in-out;
@@ -1045,7 +1027,7 @@ section p {
 }
 .jam-operasional p {
   font-weight: bold;
-  font-size: 25px; /* Anda bisa menyesuaikan ukuran font sesuai kebutuhan */
+  font-size: 25px; 
   font-family: heviatas;
 }
 .gallery {
@@ -1075,14 +1057,14 @@ section p {
   }
   .jam-operasional p {
     font-weight: bold;
-    font-size: 20px; /* Anda bisa menyesuaikan ukuran font sesuai kebutuhan */
+    font-size: 20px; 
     font-family: heviatas;
     margin-top: 20px;
   }
 }
 .section5.parallax {
   position: relative;
-  background-image: url(section.jpg);
+  background-image: url(section.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1092,7 +1074,7 @@ section p {
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+  padding-bottom: 100px; 
   width: 65%;
   margin: 0 auto;
   border-radius: 20px;
@@ -1128,7 +1110,7 @@ section p {
 @media (max-width: 768px) {
   .section5.parallax {
     position: relative;
-    background-image: url(section.jpg);
+    background-image: url(section.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1137,8 +1119,8 @@ section p {
     align-items: center;
     justify-content: center;
     color: white;
-    padding-bottom: 20px; /* Reduced padding-bottom */
-    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    padding-bottom: 20px; 
+    padding-top: 0; 
     width: 100%;
     margin: 50px auto;
     border-radius: 0;
@@ -1247,14 +1229,6 @@ section p {
   max-height: 200px;
 }
 
-textarea::-webkit-scrollbar {
-  width: 1em;
-}
-
-textarea::-webkit-scrollbar-thumb {
-  background-color: rgba(194, 194, 194, 0.713);
-}
-
 .contact form #button {
   border: none;
   background: #fff;
@@ -1280,16 +1254,16 @@ textarea::-webkit-scrollbar-thumb {
     width: 90%;
     padding: 15px;
     flex-direction: column;
-    align-items: center; /* Center all form elements horizontally */
+    align-items: center; 
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
   }
 
   .contact form h1 {
     font-size: 24px;
-    width: 100%; /* Ensure the header spans the full width */
-    text-align: center; /* Center text alignment */
-    margin-bottom: 20px; /* Add margin below the header */
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
   }
   .contact form #lastName,
   .contact form #mobile {
@@ -1297,11 +1271,11 @@ textarea::-webkit-scrollbar-thumb {
   }
   .contact form input,
   .contact form textarea {
-    width: 100%; /* Full width for better usability on small screens */
+    width: 100%; 
     margin-left: 0;
     font-size: 14px;
     padding: 12px;
-    margin-bottom: 15px; /* Uniform margin between inputs */
+    margin-bottom: 15px; 
   }
 
   .contact form textarea {
@@ -1314,25 +1288,18 @@ textarea::-webkit-scrollbar-thumb {
     width: 100%;
     font-size: 14px;
     margin-top: 10px;
-    text-align: center; /* Center the additional information */
+    text-align: center; 
   }
 
   .contact form #button {
     width: 80%;
     font-size: 18px;
     padding: 12px;
-    margin-top: 20px; /* Ensure margin above the button for spacing */
+    margin-top: 20px; 
   }
 }
 
-@media only screen and (max-width: 600px) {
-  [data-aos] {
-      opacity: 1 !important;
-      transform: none !important; /* Mengatur transformasi ke awal posisi */
-      transition: none !important;
-      /* Kamu juga bisa menambahkan properti lain sesuai kebutuhan */
-  }
-}
+
 
 .line-text {
   display: flex;
@@ -1364,7 +1331,7 @@ textarea::-webkit-scrollbar-thumb {
 .menu-makanan {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Mengatur semua item agar sejajar di bagian atas (segaris) */
+  align-items: flex-start; 
   margin-top: 30px;
   gap: 50px;
 }
@@ -1372,7 +1339,7 @@ textarea::-webkit-scrollbar-thumb {
 .gambar-menu {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Menyelaraskan gambar dan tombol di tengah secara horizontal */
+  align-items: center; 
   margin: 10px;
 }
 
@@ -1382,7 +1349,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .section6.parallax {
   position: relative;
-  background-image: url(section.jpg);
+  background-image: url(section.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1393,7 +1360,7 @@ textarea::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   color: white;
-  padding-bottom: 100px; /* Add padding to ensure space for .gambar3 */
+  padding-bottom: 100px; 
 }
 
 .section6.parallax .text-wrapper {
@@ -1425,7 +1392,7 @@ textarea::-webkit-scrollbar-thumb {
 @media (max-width: 768px) {
   .section6.parallax {
     position: relative;
-    background-image: url(section.jpg);
+    background-image: url(section.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1434,8 +1401,8 @@ textarea::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     color: white;
-    padding-bottom: 20px; /* Reduced padding-bottom */
-    padding-top: 0; /* Set padding-top to 0 or a small positive value */
+    padding-bottom: 20px; 
+    padding-top: 0; 
     width: 100%;
     margin: 50px auto;
     border-radius: 0;
@@ -1455,16 +1422,16 @@ textarea::-webkit-scrollbar-thumb {
 
 .nama-menu {
   display: flex;
-  justify-content: center; /* Centers the .item-menu horizontally */
-  padding: 0 200px; /* Adds 200px padding to the top and bottom */
+  justify-content: center; 
+  padding: 0 200px; 
   margin-bottom: 80px;
 }
 
 .item-menu {
   display: flex;
-  justify-content: space-between; /* Distributes the items evenly */
-  flex-wrap: wrap; /* Ensures that items wrap to the next line if there's not enough space */
-  max-width: 100%; /* Ensures it doesn't exceed the parent's width */
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  max-width: 100%; 
 }
 .btn2 {
   margin-top: 20px;
@@ -1494,7 +1461,7 @@ textarea::-webkit-scrollbar-thumb {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 300ms ease-in-out;
-  z-index: 1; /* Ensure overlay is below text */
+  z-index: 1; 
 }
 
 .button1:hover::before {
@@ -1504,12 +1471,12 @@ textarea::-webkit-scrollbar-thumb {
 
 .button1 span {
   position: relative;
-  z-index: 2; /* Ensure text is above overlay */
+  z-index: 2; 
 }
 .item-menu > h1 {
   display: flex;
-  justify-content: center; /* Center the text horizontally */
-  align-items: center; /* Center the text vertically */
+  justify-content: center; 
+  align-items: center; 
   position: relative;
   margin: 40px 0;
   font-family: heviatas;
@@ -1522,7 +1489,7 @@ textarea::-webkit-scrollbar-thumb {
 .item-menu > h1::before,
 .item-menu > h1::after {
   content: "";
-  flex: 0.1; /* Shorter lines */
+  flex: 0.1;
   height: 2px;
   background-color: black;
 }
@@ -1537,7 +1504,7 @@ textarea::-webkit-scrollbar-thumb {
 
 
 .mie-odos {
-  flex: 1 1 calc(25% - 10px); /* Membuat elemen lebih besar dengan mengurangi pengurangan piksel */
+  flex: 1 1 calc(25% - 10px); 
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
@@ -1557,25 +1524,25 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 .mie-odos img {
-  max-width: 80%; /* Ensures the image doesn't overflow */
+  max-width: 80%;
   height: auto;
 }
 .mie-odos:nth-last-child(2) img {
-  max-width: 55%; /* Mengubah lebar gambar pada elemen kedua terakhir */
+  max-width: 55%; 
   height: auto;
 }
 
 .mie-odos:last-child img {
-  max-width: 55%; /* Mengubah lebar gambar pada elemen terakhir */
+  max-width: 55%; 
   height: auto;
 }
 
 
 
 .mie-bakar-kering {
-  flex: 1 1 calc(20% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  flex: 1 1 calc(20% - 10px); 
   margin: 5px;
-  text-align: center; /* Aligns content within each item to center */
+  text-align: center; 
 }
 .mie-bakar-kering h1 {
   font-family: heviatas;
@@ -1589,13 +1556,13 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 .mie-bakar-kering img {
-  max-width: 100%; /* Ensures the image doesn't overflow */
+  max-width: 100%; 
   height: auto;
 }
 .nasi {
-  flex: 1 1 calc(30% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  flex: 1 1 calc(30% - 10px); 
   margin: 5px;
-  text-align: center; /* Aligns content within each item to center */
+  text-align: center; 
 }
 .nasi h1 {
   font-family: heviatas;
@@ -1609,14 +1576,14 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 .nasi img {
-  max-width: 80%; /* Ensures the image doesn't overflow */
+  max-width: 80%;
   height: auto;
 }
 
 .minuman {
-  flex: 1 1 calc(30% - 10px); /* Flex-grow, flex-shrink, and basis: adjust percentage as needed */
+  flex: 1 1 calc(30% - 10px);
   margin: 5px;
-  text-align: center; /* Aligns content within each item to center */
+  text-align: center;
 }
 .minuman h1 {
   font-family: heviatas;
@@ -1630,7 +1597,7 @@ textarea::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 .minuman img {
-  max-width: 50%; /* Ensures the image doesn't overflow */
+  max-width: 50%; 
   height: auto;
 }
 @media (max-width: 768px) {
@@ -1647,18 +1614,18 @@ textarea::-webkit-scrollbar-thumb {
 
   .menu-makanan {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Buat dua kolom dengan lebar yang sama */
-    gap: 20px; /* Atur jarak antar item */
-    justify-content: center; /* Pusatkan grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+    justify-content: center; 
   }
 
   .menu-makanan > :nth-child(3) {
-    grid-column: 1 / span 2; /* Membuat item ketiga mengambil dua kolom */
-    justify-self: center; /* Pastikan item ketiga berada di tengah */
+    grid-column: 1 / span 2;
+    justify-self: center; 
   }
   .menu-makanan > :nth-child(3) img {
-    max-width: 50%; /* Atur max-width sesuai kebutuhan */
-    margin: 0 auto; /* Pastikan gambar tetap berada di tengah */
+    max-width: 50%;
+    margin: 0 auto;
   }
   
   .gambar-menu {
@@ -1671,14 +1638,14 @@ textarea::-webkit-scrollbar-thumb {
   }
 
   .nama-menu {
-    padding: 0 20px; /* Kurangi padding */
+    padding: 0 20px; 
     margin-bottom: 40px;
   }
 
   .item-menu {
-    justify-content: center; /* Pusatkan item */
-    flex-direction: column; /* Tumpuk item secara vertikal */
-    gap: 20px; /* Tambahkan jarak antar item */
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .item-menu > h1 {
@@ -1688,15 +1655,15 @@ textarea::-webkit-scrollbar-thumb {
 
   .item-menu > h1::before,
   .item-menu > h1::after {
-    flex: 1; /* Membuat garis memenuhi lebar */
+    flex: 1;
   }
 
   .mie-odos,
   .mie-bakar-kering,
   .nasi,
   .minuman {
-    flex: 1 1 100%; /* Setiap item mengambil lebar penuh */
-    margin: 10px 0; /* Tambahkan margin vertikal */
+    flex: 1 1 100%; 
+    margin: 10px 0; 
   }
 
   .mie-odos h1,
@@ -1713,12 +1680,12 @@ textarea::-webkit-scrollbar-thumb {
     font-size: 0.9em;
   }
   .mie-odos:nth-last-child(2) img {
-    max-width: 100%; /* Mengubah lebar gambar pada elemen kedua terakhir */
+    max-width: 100%; 
     height: auto;
   }
   
   .mie-odos:last-child img {
-    max-width: 100%; /* Mengubah lebar gambar pada elemen terakhir */
+    max-width: 100%; 
     height: auto;
   }
   .btn2 {
@@ -1750,7 +1717,7 @@ textarea::-webkit-scrollbar-thumb {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
-    z-index: 1; /* Pastikan overlay berada di bawah teks */
+    z-index: 1; 
   }
   
   .button1:hover::before {
@@ -1760,7 +1727,7 @@ textarea::-webkit-scrollbar-thumb {
   
   .button1 span {
     position: relative;
-    z-index: 2; /* Pastikan teks berada di atas overlay */
+    z-index: 2; 
     font-size: 9px;
   }
 }
@@ -1795,7 +1762,7 @@ textarea::-webkit-scrollbar-thumb {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
-    z-index: 1; /* Ensure overlay is below text */
+    z-index: 1;
   }
   
   .button1:hover::before {
@@ -1805,7 +1772,7 @@ textarea::-webkit-scrollbar-thumb {
   
   .button1 span {
     position: relative;
-    z-index: 2; /* Ensure text is above overlay */
+    z-index: 2; 
     font-size: 8px;
   }
 }
@@ -1838,7 +1805,7 @@ textarea::-webkit-scrollbar-thumb {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 300ms ease-in-out;
-    z-index: 1; /* Ensure overlay is below text */
+    z-index: 1; 
   }
   
   .button1:hover::before {
@@ -1848,7 +1815,7 @@ textarea::-webkit-scrollbar-thumb {
   
   .button1 span {
     position: relative;
-    z-index: 2; /* Ensure text is above overlay */
+    z-index: 2; 
     font-size: 7px;
   }
 }
